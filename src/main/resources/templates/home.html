@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>AvivaSA Acente Portalı</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/form-elements.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="../static/bootstrap.css" th:href="@{/bootstrap.css}"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="../static/assets/ico/favicon.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../static/assets/ico/apple-touch-icon-57-precomposed.png"/>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-3 middle-border"></div>
+    <div class="col-sm-1">
+        <form>
+            <a th:href="@{/manager/}" class="btn btn-info btn-lg"> <span class="glyphicon glyphicon-cog"></span>G.ManagerLogin</a>
+        </form>
+    </div>
+
+    <div class="col-sm-1 middle-border"></div>
+    <div class="col-sm-1">
+        <form >
+            <a th:href="@{/departmanManagerLogin/}" class="btn btn-info btn-lg"> <span class="glyphicon glyphicon-cog"></span>D.ManagerLogin</a>
+        </form>
+    </div>
+    <div class="col-sm-1 middle-border"></div>
+    <div class="col-sm-2">
+        <form >
+            <a th:href="@{/employeesLogin/}" class="btn btn-info btn-lg"> <span class="glyphicon glyphicon-cog"></span>EmployeesLogin</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
